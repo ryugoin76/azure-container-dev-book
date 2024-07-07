@@ -44,6 +44,7 @@ public class HelloWorldConfigurationTests {
 		ResponseEntity<String> entity = restTemplate
 				.getForEntity("http://localhost:" + this.port + "/", String.class);
 		assertEquals("Hello Docker World", entity.getBody());
+		//assertEquals("Hoge", entity.getBody());
 	}
 
 }
